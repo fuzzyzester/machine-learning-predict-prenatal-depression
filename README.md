@@ -42,17 +42,17 @@ This project explores the feasibility of predicting prenatal depression using **
 ## Visual Highlights
 ### 1. **Correlation Matrix**
 - Highlights relationships between features such as sleep, activity, and inactivity.
-![Correlation Matrix](https://raw.githubusercontent.com/fuzzyzester/prenatal-depression/main/screenshots/correlation-matrix.png)
+![Correlation Matrix](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/correlation-matrix.png)
 
 ### 2. **Feature Distribution**
 - Visualizes the distribution of key features like daily steps and sleep duration.
-![Feature Distribution](https://raw.githubusercontent.com/fuzzyzester/prenatal-depression/main/screenshots/feature-distribution.png)
+![Feature Distribution](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/feature-distribution.png)
 
 ### 3. **ROC Curve**
 - Compares the classification performance of all models.
-![ROC Curve](https://raw.githubusercontent.com/fuzzyzester/prenatal-depression/main/screenshots/roc-curve.png)
+![ROC Curve](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/roc-curve.png)
 
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/fuzzyzester/prenatal-depression.git
+   git clone https://github.com/fuzzyzester/machine-learning-predict-prenatal-depression.git
