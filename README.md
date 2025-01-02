@@ -1,7 +1,7 @@
 # Predicting Prenatal Depression Using Machine Learning
 
 ## Overview
-This project explores the feasibility of predicting prenatal depression using **power state data** collected from wearable devices, combined with EPDS (Edinburgh Postnatal Depression Scale) scores. By leveraging machine learning algorithms, the project aims to identify patterns in physiological and behavioral data that correlate with depressive symptoms during pregnancy.
+This project investigates the feasibility of predicting prenatal depression using power state data collected from the Mom2B smartphone application—a research initiative by Uppsala University. By leveraging machine learning algorithms, the study aims to identify patterns in physiological and behavioral data that correlate with depressive symptoms during pregnancy. These insights could support early detection, enabling timely prevention or intervention strategies.
 
 ## Objectives
 - Utilize power state data to predict prenatal depression.
