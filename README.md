@@ -52,7 +52,3 @@ This project investigates the feasibility of predicting prenatal depression usin
 - Compares the classification performance of all models.
 ![ROC Curve](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/roc-curve.png)
 
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/fuzzyzester/machine-learning-predict-prenatal-depression.git
