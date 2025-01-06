@@ -1,54 +1,69 @@
-# Predicting Prenatal Depression Using Machine Learning
+# **Predicting Prenatal Depression Using Machine Learning**
 
-## Overview
-This project investigates the feasibility of predicting prenatal depression using power state data collected from the Mom2B smartphone application—a research initiative by Uppsala University. By leveraging machine learning algorithms, the study aims to identify patterns in physiological and behavioral data that correlate with depressive symptoms during pregnancy. These insights could support early detection, enabling timely prevention or intervention strategies.
+## **Overview**
+This project investigates the potential of predicting prenatal depression using power state data collected from the Mom2B smartphone application—a research initiative by Uppsala University. By applying machine learning algorithms to wearable device data and Edinburgh Postnatal Depression Scale (EPDS) scores, this study explores early detection methods for depressive symptoms during pregnancy. The insights gained aim to support timely interventions and improve maternal mental health outcomes.
 
-## Objectives
-- Utilize power state data to predict prenatal depression.
-- Develop and evaluate machine learning models for classification.
-- Provide insights into features most associated with depressive symptoms.
+---
 
-## Features
-- **Data Preprocessing**:
-  - Handled missing data using imputation and SMOTE for balancing classes.
-  - Engineered features such as average daily steps, sleep duration, and inactivity periods.
-- **Exploratory Data Analysis (EDA)**:
-  - Conducted statistical analysis and visualized data distributions.
-  - Examined correlations between features and depressive symptoms.
-- **Machine Learning Pipeline**:
-  - Models: Logistic Regression, Random Forest, Gradient Boosting, and Support Vector Machine (SVM).
-  - Hyperparameter tuning using RandomizedSearchCV.
+## **Objectives**
+1. **Predict Prenatal Depression**: Utilize power state data to develop predictive models for identifying depressive symptoms during pregnancy.
+2. **Model Evaluation**: Assess machine learning algorithms for accuracy, precision, recall, and overall predictive capability.
+3. **Feature Insights**: Identify patterns in physiological and behavioral data correlated with depressive symptoms.
 
-## Tools and Technologies
+---
+
+## **Key Features**
+
+### **Data Preprocessing**
+- **Handling Missing Data**: Missing values were addressed using imputation techniques, and class imbalance was resolved with SMOTE (Synthetic Minority Oversampling Technique).
+- **Feature Engineering**: Derived key features from power state data, including:
+  - Daily steps (activity levels).
+  - Sleep duration (rest patterns).
+  - Inactivity periods (low activity phases).
+
+### **Exploratory Data Analysis (EDA)**
+- Conducted statistical analysis and visualized feature distributions.
+- Examined correlations between activity, sleep, inactivity, and EPDS scores.
+
+### **Machine Learning Pipeline**
+- **Algorithms Implemented**:
+  - Logistic Regression
+  - Random Forest
+  - Gradient Boosting
+  - Support Vector Machine (SVM)
+- **Hyperparameter Tuning**: Used `RandomizedSearchCV` for optimization.
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score, and ROC AUC.
+
+---
+
+## **Tools and Technologies**
 - **Programming Language**: Python
-- **Libraries**: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
+- **Libraries Used**:
+  - Data Processing: `pandas`, `numpy`
+  - Machine Learning: `scikit-learn`
+  - Visualization: `matplotlib`, `seaborn`
 
-## Results
-- **Gradient Boosting**:
-  - Accuracy: 59%
-  - Precision: 39%
-  - Recall: 58%
-  - ROC AUC: 0.54
-- **Random Forest**:
-  - Accuracy: 56%
-  - Precision: 35%
-  - Recall: 50%
-  - ROC AUC: 0.58
+---
 
-### Key Insights
-- Random Forest and Gradient Boosting demonstrated the best performance, highlighting their ability to handle complex, non-linear relationships.
-- Power state data shows promise as a predictive tool for prenatal depression when combined with EPDS scores.
+## **Results**
+### **Model Performance**
+| **Model**            | **Accuracy** | **Precision** | **Recall** | **ROC AUC** |
+|-----------------------|--------------|---------------|------------|-------------|
+| Gradient Boosting     | 59%          | 39%           | 58%        | 0.54        |
+| Random Forest         | 56%          | 35%           | 50%        | 0.58        |
+| Logistic Regression   | 51%          | -             | -          | 0.47        |
+| Support Vector Machine| 51%          | 0.00          | 0.00       | 0.40        |
 
-## Visual Highlights
-### 1. **Correlation Matrix**
-- Highlights relationships between features such as sleep, activity, and inactivity.
-![Correlation Matrix](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/correlation-matrix.png)
+- **Gradient Boosting** and **Random Forest** performed best, demonstrating moderate success in identifying depressive symptoms.
+- **Support Vector Machine** struggled to predict cases effectively.
 
-### 2. **Feature Distribution**
-- Visualizes the distribution of key features like daily steps and sleep duration.
-![Feature Distribution](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/feature-distribution.png)
+---
 
-### 3. **ROC Curve** 
-- Compares the classification performance of all models.
-![ROC Curve](https://raw.githubusercontent.com/fuzzyzester/machine-learning-predict-prenatal-depression/main/screenshots/roc-curve.png)
+## **Key Insights**
+- Behavioral patterns such as activity levels and sleep duration show promise as predictive indicators of prenatal depression.
+- Combining power state data with EPDS scores enhances the model's predictive capability.
+- Ensemble methods like Random Forest and Gradient Boosting handle complex data relationships better than simpler models.
+
+---
+
 
